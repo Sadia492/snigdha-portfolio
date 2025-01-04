@@ -45,11 +45,9 @@ export default function Navbar() {
   return (
     <div
       className={`w-full fixed top-0 z-10 text-white transition-all duration-500 ease-in-out ${
-        hash === "#home"
-          ? isScrolled
-            ? "bg-primary/50 backdrop-blur-md text-white" // Background color when scrolled on homepage
-            : "bg-transparent" // Transparent background on homepage
-          : "bg-primary/45 backdrop-blur-xl" // Non-transparent background on other pages
+        isScrolled
+          ? "bg-primary/50 backdrop-blur-md text-white" // Background color when scrolled on homepage
+          : "bg-transparent" // Transparent background on homepage
       }`}
     >
       <div className="navbar lg:w-11/12 mx-auto">
