@@ -49,15 +49,15 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="w-11/12 mx-auto my-10">
-      <h2 className="text-4xl font-bold text-center mb-10 bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text">
+    <div id="contact" className="w-11/12 mx-auto py-12">
+      <h2 className="text-3xl my-8 text-center font-bold bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
         Contact Me
       </h2>
 
-      <div className="flex flex-wrap gap-10 justify-between items-start">
+      <div className="flex flex-col lg:flex-row gap-10 justify-between items-start">
         {/* Contact Form Section */}
         <form
-          className="flex-1 bg-white shadow-lg rounded-lg p-8 space-y-6"
+          className="flex-1 bg-white shadow-lg w-full rounded-lg p-8 space-y-6"
           onSubmit={handleSubmit}
         >
           <h3 className="text-2xl font-semibold text-gray-800">Get in Touch</h3>
@@ -104,34 +104,34 @@ export default function ContactForm() {
           </label>
           <button
             type="submit"
-            className="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold py-3 rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105"
+            className="w-full bg-gradient-to-r from-secondary to-primary text-white font-semibold py-3 rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105"
           >
             Send Message
           </button>
         </form>
 
         {/* Contact Information Section */}
-        <div className="flex-1 bg-gray-100 shadow-lg rounded-lg p-8 space-y-6 text-gray-800">
+        <div className="flex-1 bg-gray-100 w-full shadow-lg rounded-lg p-8 space-y-6 text-gray-800">
           <h3 className="text-2xl font-semibold text-gray-800">
             Contact Information
           </h3>
           <p className="flex items-center gap-3">
-            <FaLocationDot className="text-purple-500" />
+            <FaLocationDot className="text-secondary" />
             <span>Dhaka, Bangladesh</span>
           </p>
           <p className="flex items-center gap-3">
-            <FaEnvelope className="text-purple-500" />
+            <FaEnvelope className="text-secondary" />
             <span>sadiaafrin2792@gmail.com</span>
           </p>
           <p className="flex items-center gap-3">
-            <FaPhone className="text-purple-500" />
+            <FaPhone className="text-secondary" />
             <span>01707604378</span>
           </p>
           <p className="flex items-center gap-3">
-            <FaWhatsapp className="text-purple-500" />
+            <FaWhatsapp className="text-secondary" />
             <span>01707604378</span>
           </p>
-          <div className="bg-gradient-to-r from-purple-500 to-pink-500 h-1 w-20 rounded-lg mt-4"></div>
+          <div className="bg-gradient-to-r from-secondary to-accent h-1 w-20 rounded-lg mt-4"></div>
         </div>
       </div>
     </div>

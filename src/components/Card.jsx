@@ -12,7 +12,7 @@ export default function Card({ project }) {
       </figure>
       <div className="card-body">
         <h2 className="card-title">{name}</h2>
-        <div className="flex justify-end gap-2">
+        <div className="flex flex-wrap justify-end gap-2">
           {technologies.map((technology, idx) => (
             <div key={idx} className="badge badge-secondary">
               {technology}

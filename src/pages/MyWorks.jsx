@@ -16,35 +16,14 @@ export default function MyWorks() {
   }, []);
 
   return (
-    <div id="myworks">
-      <h2 className="text-3xl my-8 text-center font-bold bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
+    <div id="myworks" className="pt-12">
+      <h2 className="text-3xl my-8 mt-12 text-center font-bold bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
         My Works
       </h2>
-      <div className="w-11/12 mx-auto grid grid-cols-3 gap-8">
+      <div className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project) => (
           <Card key={project.id} project={project}></Card>
         ))}
-        {/* <Card
-          img={project1}
-          title={"Study Circle Project"}
-          description={
-            "StudyCircle is an innovative online group study platform where users can create assignments, submit them, and grade peers' work. With features like theme customization and secure JWT authentication, it fosters collaborative and engaging learning experiences."
-          }
-        ></Card>
-        <Card
-          img={project2}
-          title={"Crowdcube Project"}
-          description={
-            "Crowdcube is a dynamic crowdfunding platform that connects entrepreneurs with investors, enabling users to explore, invest in, and support innovative startup projects. The platform offers a seamless user experience with secure authentication and real-time investment tracking features."
-          }
-        ></Card>
-        <Card
-          img={project3}
-          title={"Winter Donation Project"}
-          description={
-            "Winter Donation Project is a platform designed to connect donors with volunteers, aiming to provide winter clothing to those in need across Bangladesh. The website facilitates easy browsing of donation campaigns and secure online donations, helping vulnerable individuals stay warm during the cold season."
-          }
-        ></Card> */}
       </div>
     </div>
   );

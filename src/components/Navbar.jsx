@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
+import logo from "../assets/logo1.png";
 
 export default function Navbar() {
   const { hash } = useLocation();
@@ -46,9 +47,9 @@ export default function Navbar() {
       className={`w-full fixed top-0 z-10 text-white transition-all duration-500 ease-in-out ${
         hash === "#home"
           ? isScrolled
-            ? "bg-secondary/50 backdrop-blur-md text-white" // Background color when scrolled on homepage
+            ? "bg-primary/50 backdrop-blur-md text-white" // Background color when scrolled on homepage
             : "bg-transparent" // Transparent background on homepage
-          : "bg-secondary/45 backdrop-blur-xl" // Non-transparent background on other pages
+          : "bg-primary/45 backdrop-blur-xl" // Non-transparent background on other pages
       }`}
     >
       <div className="navbar lg:w-11/12 mx-auto">
@@ -77,7 +78,8 @@ export default function Navbar() {
               {links}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          {/* <a className="text-2xl font-bold">daisyUI</a> */}
+          <img className="w-20" src={logo} alt="" />
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal gap-3 px-1">{links}</ul>
@@ -86,7 +88,7 @@ export default function Navbar() {
           <a
             href="https://drive.google.com/drive/u/0/home"
             target="_blank"
-            className="btn"
+            className="btn bg-gradient-to-r from-secondary to-primary text-white"
           >
             Download Resume
           </a>

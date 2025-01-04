@@ -49,12 +49,9 @@ export default function Skills() {
   const goToPrev = () => sliderRef.current.slickPrev();
   return (
     <div id="skills">
-      <div className="h-screen mx-auto">
+      <div className="mx-auto">
         <div className="">
-          <h2>
-            These include, but are not limited to, the technologies I use for
-            building client-side applications
-          </h2>
+          <h2></h2>
 
           <div className="py-8 px-16">
             <div className="mx-auto px-4 py-16">
@@ -64,9 +61,8 @@ export default function Skills() {
                     SKILLs
                   </h2>
                   <p className="text-gray-400 mt-4 lg:w-3/5">
-                    With easy-to-use tools and real-time updates, our feature
-                    section ensures that every user can manage their tasks and
-                    interactions effortlessly.
+                    These include, but are not limited to, the technologies I
+                    use for building applications
                   </p>
                 </div>
                 <div className="flex gap-2">
@@ -230,7 +226,7 @@ export default function Skills() {
                 </Slider>
               </div>
             </div>
-            {/* <Education></Education> */}
+            <Education></Education>
           </div>
         </div>
       </div>

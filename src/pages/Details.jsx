@@ -42,10 +42,10 @@ export default function Details() {
   return (
     <div className="w-11/12 mx-auto mt-10">
       {/* Back to Home Link */}
-      <div className="mb-8">
+      <div className="mb-8 text-right">
         <Link
-          to="/"
-          className="btn btn-primary px-6 py-2 rounded-lg text-white hover:bg-primary focus:ring-4 focus:ring-primary transition-all"
+          to="/#home"
+          className="btn bg-gradient-to-r from-secondary to-primary text-white"
         >
           Back to Home
         </Link>
@@ -59,47 +59,45 @@ export default function Details() {
         </div>
 
         {/* Text Information Section */}
-        <div className=" text-center lg:text-left">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4 text-center">
+        <div className=" text-center lg:text-left  text-white mt-4">
+          <h2 className="text-4xl font-bold  mb-4 text-center text-primary">
             {name}
           </h2>
-          <p className="text-lg text-gray-600 mb-6 text-center">
-            {description}
-          </p>
+          <p className="text-lg mb-6 text-center">{description}</p>
           <div className="grid grid-cols-2 gap-x-8">
             <div className="mb-6">
-              <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-2xl font-semibold text-secondary mb-2">
                 Technologies Used:
               </h3>
-              <p className="text-lg text-gray-600">{technologies?.join(",")}</p>
+              <p className="text-lg ">{technologies?.join(",")}</p>
             </div>
 
             <div className="mb-6">
-              <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-2xl font-semibold text-secondary mb-2">
                 Year:
               </h3>
-              <p className="text-lg text-gray-600">{year}</p>
+              <p className="text-lg ">{year}</p>
             </div>
 
             <div className="mb-6">
-              <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-2xl font-semibold text-accent mb-2">
                 Challenges:
               </h3>
-              <p className="text-lg text-gray-600">{challenges}</p>
+              <p className="text-lg ">{challenges}</p>
             </div>
 
             <div className="mb-6">
-              <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-2xl text-accent font-semibold  mb-2">
                 Limitations:
               </h3>
-              <p className="text-lg text-gray-600">{limitations}</p>
+              <p className="text-lg ">{limitations}</p>
             </div>
 
             <div className="mb-6">
-              <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-2xl text-primary font-semibold  mb-2">
                 Improvements:
               </h3>
-              <p className="text-lg text-gray-600">{improvements}</p>
+              <p className="text-lg ">{improvements}</p>
             </div>
           </div>
         </div>

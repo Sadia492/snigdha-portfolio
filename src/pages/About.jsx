@@ -1,30 +1,43 @@
 import React from "react";
-import photo from "../assets/photo_2025-01-04_10-52-08.jpg";
+import photo from "../assets/banner.png";
 import { FaBook, FaChess, FaMusic, FaSun } from "react-icons/fa";
 
 export default function About() {
   return (
-    <div id="about">
-      <div className="hero bg-base-200 min-h-screen">
+    <div id="about" className="bg-base-200  min-h-screen py-12">
+      <h2 className="text-3xl font-bold bg-gradient-to-r from-primary from-10% to-secondary text-transparent bg-clip-text text-center">
+        About Me
+      </h2>
+      <div className="hero ">
         <div className="hero-content flex-col lg:flex-row">
-          <div className="flex-1 flex justify-end gap-2">
-            <img src={photo} className="max-w-sm rounded-lg shadow-2xl" />
+          <div className="flex-1 flex flex-col lg:flex-row justify-end gap-2">
+            <div className="relative">
+              {/* Image */}
+              <img
+                src={photo}
+                className="max-w-sm rounded-lg shadow-2xl"
+                alt="Descriptive Alt Text"
+              />
+
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-transparent opacity-60 mix-blend-multiply rounded-lg"></div>
+            </div>
             <div className="pt-8">
-              <h2 className="flex gap-1">
+              <h2 className="flex gap-1 text-primary">
                 <FaChess /> Play Online Chess at leisure
               </h2>
-              <h2 className="flex gap-1 items-center">
+              <h2 className="flex gap-1 items-center text-secondary">
                 <FaBook /> Read books on tech
               </h2>
-              <h2 className="flex gap-1 items-center">
+              <h2 className="flex gap-1 items-center text-accent">
                 <FaMusic /> Explore new music genres
               </h2>
-              <h2 className="flex gap-1 items-center">
+              <h2 className="flex gap-1 items-center text-orange-600">
                 <FaSun /> Traveling new places
               </h2>
             </div>
           </div>
-          <div className="flex-1">
+          <div className="flex-1 p-8 lg:p-0">
             {/* <h1 className="text-5xl font-bold">Box Office News!</h1> */}
             <p className="py-6">
               Hi, I'm Snigdha, a passionate web developer focused on creating
