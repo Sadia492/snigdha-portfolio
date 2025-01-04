@@ -29,12 +29,12 @@ export default function MainLayout() {
       <MyWorks></MyWorks>
       <Contact></Contact>
       <Footer></Footer>
-      <div className="fixed right-0 bottom-20">
+      <div className="fixed right-0 bottom-0">
         <Link
           onClick={scrollToHome} // Duration of the scroll (in milliseconds)
-          className="flex justify-center items-center -rotate-90 bg-primary text-white p-4 rounded-full"
+          className="flex justify-center items-center -rotate-90 text-primary font-bold text-2xl p-4 rounded-full"
         >
-          Back To home<FaArrowRight></FaArrowRight>
+          <FaArrowRight className="text-4xl"></FaArrowRight>
         </Link>
       </div>
     </div>

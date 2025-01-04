@@ -64,7 +64,7 @@ export default function Details() {
             {name}
           </h2>
           <p className="text-lg mb-6 text-center">{description}</p>
-          <div className="grid grid-cols-2 gap-x-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-8">
             <div className="mb-6">
               <h3 className="text-2xl font-semibold text-secondary mb-2">
                 Technologies Used:

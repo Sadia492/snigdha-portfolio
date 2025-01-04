@@ -18,7 +18,7 @@ export default function Skills() {
   // React Slick settings
   const settings = {
     infinite: true, // Make the slider infinite
-    slidesToShow: 3.5, // Show 3 slides at a time
+    slidesToShow: 3, // Show 3 slides at a time
     slidesToScroll: 1, // Scroll 1 slide at a time
     autoplay: true, // Enable auto-play
     autoplaySpeed: 2050, // 5 seconds interval between auto-slides
