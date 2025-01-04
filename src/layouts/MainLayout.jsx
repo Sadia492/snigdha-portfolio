@@ -6,6 +6,7 @@ import About from "../pages/About";
 import Skills from "../pages/Skills";
 import MyWorks from "../pages/MyWorks";
 import Education from "../components/Education";
+import Contact from "../pages/Contact";
 
 export default function MainLayout() {
   return (
@@ -16,6 +17,7 @@ export default function MainLayout() {
       <Skills></Skills>
       <Education></Education>
       <MyWorks></MyWorks>
+      <Contact></Contact>
     </div>
   );
 }
