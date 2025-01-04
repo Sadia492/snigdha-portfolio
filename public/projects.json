@@ -2,6 +2,7 @@
   {
     "id": 1,
     "name": "Study Circle",
+    "live": "https://study-circle-face7.web.app/",
     "description": "An online group study platform where students can collaborate on assignments and grade each other's work.",
     "technologies": ["React", "Node.js", "MongoDB", "Express"],
     "image": "https://i.ibb.co.com/b5MnmCB/Screenshot-2025-01-04-135047.png",
@@ -23,6 +24,7 @@
   {
     "id": 2,
     "name": "Crowdcube",
+    "live": "https://crowdcube-dc5f1.web.app/",
     "description": "A crowdfunding platform where entrepreneurs can raise capital from investors.",
     "technologies": ["React", "Express", "MongoDB"],
     "image": "https://i.ibb.co.com/16kdsxs/Screenshot-2025-01-04-135749.png",
@@ -44,6 +46,7 @@
   {
     "id": 3,
     "name": "Winter Donation",
+    "live": "https://winter-donation-727a4.web.app/",
     "description": "A web application that allows people to donate winter clothing to those in need.",
     "technologies": ["React", "Node.js", "Express"],
     "image": "https://i.ibb.co.com/vjwg4vB/Screenshot-2025-01-04-135849.png",

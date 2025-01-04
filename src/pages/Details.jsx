@@ -12,7 +12,6 @@ export default function Details() {
         const { data } = await axios.get("/projects.json");
         console.log("Fetched data:", data);
 
-        // Ensure the id matches the type in the JSON (e.g., convert id to string if necessary)
         const newData = data?.find(
           (item) => item.id.toString() === id.toString()
         );
@@ -37,6 +36,7 @@ export default function Details() {
     challenges,
     limitations,
     improvements,
+    live,
   } = project;
 
   return (
@@ -98,6 +98,14 @@ export default function Details() {
                 Improvements:
               </h3>
               <p className="text-lg ">{improvements}</p>
+            </div>
+            <div className="mb-6">
+              <h3 className="text-2xl text-primary font-semibold  mb-2">
+                Live Link:
+              </h3>
+              <a target="_blank" href={live} className="text-lg ">
+                {live}
+              </a>
             </div>
           </div>
         </div>

@@ -1,10 +1,11 @@
 import React from "react";
 import { BsBoxArrowUpRight } from "react-icons/bs";
-import { FaArrowCircleUp } from "react-icons/fa";
+import { CiLink } from "react-icons/ci";
+import { FaArrowCircleUp, FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default function Card({ project }) {
-  const { name, image, description, technologies } = project;
+  const { name, image, description, technologies, live } = project;
   return (
     <div className="card bg-base-100 shadow-xl">
       <figure>
@@ -21,6 +22,12 @@ export default function Card({ project }) {
         </div>
         <p>{description}</p>
         <div className="card-actions justify-end">
+          <Link to="">
+            <FaGithub className="text-3xl" />
+          </Link>
+          <Link target="_blank" to={live}>
+            <CiLink className="text-3xl" />
+          </Link>
           <Link to={`/details/${project.id}`}>
             <BsBoxArrowUpRight className="text-2xl" />
           </Link>
