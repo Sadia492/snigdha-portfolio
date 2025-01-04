@@ -4,6 +4,7 @@ import { Outlet } from "react-router-dom";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Skills from "../pages/Skills";
+import MyWorks from "../pages/MyWorks";
 
 export default function MainLayout() {
   return (
@@ -12,6 +13,7 @@ export default function MainLayout() {
       <Home></Home>
       <About></About>
       <Skills></Skills>
+      <MyWorks></MyWorks>
     </div>
   );
 }

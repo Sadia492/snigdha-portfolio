@@ -30,7 +30,7 @@ export default function Navbar() {
       <a href="#about">About</a>
 
       <a href="#skills">
-        <li>Skills</li>
+        <li>Skills & Education</li>
       </a>
       <a href="#myworks">
         <li>My Works</li>
