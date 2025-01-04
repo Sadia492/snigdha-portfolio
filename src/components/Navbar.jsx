@@ -24,7 +24,7 @@ export default function Navbar() {
 
   const links = (
     <>
-      <a href="#home">
+      <a href="/">
         <li>Home</li>
       </a>
       <a href="#about">About</a>

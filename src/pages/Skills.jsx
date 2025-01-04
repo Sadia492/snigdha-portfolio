@@ -230,8 +230,8 @@ export default function Skills() {
                 </Slider>
               </div>
             </div>
+            {/* <Education></Education> */}
           </div>
-          <Education></Education>
         </div>
       </div>
     </div>

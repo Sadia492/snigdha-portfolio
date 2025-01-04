@@ -13,10 +13,10 @@ import MainLayout from "./layouts/MainLayout.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
+    {/* <BrowserRouter>
       <MainLayout></MainLayout>
-    </BrowserRouter>
+    </BrowserRouter> */}
 
-    {/* <RouterProvider router={router}></RouterProvider> */}
+    <RouterProvider router={router}></RouterProvider>
   </StrictMode>
 );

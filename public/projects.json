@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "name": "Study Circle",
+    "description": "An online group study platform where students can collaborate on assignments and grade each other's work.",
+    "technologies": ["React", "Node.js", "MongoDB", "Express"],
+    "image": "https://i.ibb.co.com/b5MnmCB/Screenshot-2025-01-04-135047.png",
+    "year": 2024,
+    "challenges": [
+      "Implementing real-time collaborative features (chat, live updates) using WebSockets.",
+      "Ensuring data security for user-generated content and grades.",
+      "Integrating third-party services for assignment submission and feedback."
+    ],
+    "limitations": [
+      "Currently lacks mobile app support; will focus on it in future versions.",
+      "Real-time functionality is not as smooth as desired due to limitations in WebSocket handling."
+    ],
+    "improvements": [
+      "Optimizing backend performance to handle large numbers of concurrent users.",
+      "Enhancing user interface for a more intuitive experience, especially for first-time users."
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Crowdcube",
+    "description": "A crowdfunding platform where entrepreneurs can raise capital from investors.",
+    "technologies": ["React", "Express", "MongoDB"],
+    "image": "https://i.ibb.co.com/16kdsxs/Screenshot-2025-01-04-135749.png",
+    "year": 2023,
+    "challenges": [
+      "Implementing user authentication with secure token handling for investors and project owners.",
+      "Building an efficient, scalable architecture for handling thousands of investor transactions.",
+      "Ensuring data integrity between investors and entrepreneurs, especially in sensitive financial transactions."
+    ],
+    "limitations": [
+      "Limited search and filter options for investment opportunities.",
+      "The platform only supports one payment gateway, restricting potential international users."
+    ],
+    "improvements": [
+      "Expanding payment gateway options to support international transactions.",
+      "Adding advanced search and filter functionalities for better user experience."
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Winter Donation",
+    "description": "A web application that allows people to donate winter clothing to those in need.",
+    "technologies": ["React", "Node.js", "Express"],
+    "image": "https://i.ibb.co.com/vjwg4vB/Screenshot-2025-01-04-135849.png",
+    "year": 2023,
+    "challenges": [
+      "Integrating location-based features to help users find nearby donation drives.",
+      "Ensuring proper tracking of donations to avoid confusion in the distribution process.",
+      "Handling large image uploads for product listings while maintaining optimal performance."
+    ],
+    "limitations": [
+      "The donation tracking system is in the early stages and could be more robust.",
+      "Limited promotional reach; the platform needs better marketing to attract more donors."
+    ],
+    "improvements": [
+      "Introducing geolocation services to suggest nearby donation opportunities.",
+      "Improving image upload and processing features for better performance."
+    ]
+  }
+]
