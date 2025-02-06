@@ -3,7 +3,7 @@ import DU from "../assets/512px-Dhaka_University_logo.svg.jpg";
 
 export default function Education() {
   return (
-    <div className="w-11/12 mx-auto">
+    <div className="px-8">
       <h2 className="text-3xl font-bold bg-gradient-to-r from-primary from-0 to-15% to-secondary text-transparent bg-clip-text mb-6">
         Education
       </h2>

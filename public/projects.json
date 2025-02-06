@@ -3,8 +3,9 @@
     "id": 1,
     "name": "Study Circle",
     "live": "https://study-circle-face7.web.app/",
+    "github": "https://github.com/Sadia492/study-circle",
     "description": "An online group study platform where students can collaborate on assignments and grade each other's work.",
-    "technologies": ["React", "Node.js", "MongoDB", "Express"],
+    "technologies": ["React", "Node.js", "MongoDB", "Express", "JWT"],
     "image": "https://i.ibb.co.com/b5MnmCB/Screenshot-2025-01-04-135047.png",
     "year": 2024,
     "challenges": [
@@ -23,10 +24,43 @@
   },
   {
     "id": 2,
+    "name": "Blood Hope",
+    "live": "https://blood-hope.web.app/",
+    "github": "https://github.com/Sadia492/blood-hope",
+
+    "description": "A blood donation platform that connects donors with those in need, making the donation process easier and more efficient.",
+    "technologies": [
+      "React",
+      "Firebase",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Stripe"
+    ],
+    "image": "https://i.ibb.co.com/0jYLq1XX/Screenshot-2025-02-05-104055.png",
+    "year": 2024,
+    "challenges": [
+      "Building a real-time donor-matching system based on location and blood type.",
+      "Ensuring data privacy and security for donors and recipients.",
+      "Implementing an efficient notification system for urgent blood requests."
+    ],
+    "limitations": [
+      "Currently, the platform lacks a mobile app, limiting accessibility for some users.",
+      "Real-time matching may experience occasional delays during peak hours."
+    ],
+    "improvements": [
+      "Developing a mobile app for better accessibility and user experience.",
+      "Enhancing the matching algorithm to improve response times and efficiency."
+    ]
+  },
+  {
+    "id": 3,
     "name": "Crowdcube",
     "live": "https://crowdcube-dc5f1.web.app/",
+    "github": "https://github.com/Sadia492/crowdcube",
+
     "description": "A crowdfunding platform where entrepreneurs can raise capital from investors.",
-    "technologies": ["React", "Express", "MongoDB"],
+    "technologies": ["React", "Express", "MongoDB", "Firebase", "Node.js"],
     "image": "https://i.ibb.co.com/16kdsxs/Screenshot-2025-01-04-135749.png",
     "year": 2023,
     "challenges": [
@@ -44,11 +78,13 @@
     ]
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "Winter Donation",
     "live": "https://winter-donation-727a4.web.app/",
+    "github": "https://github.com/Sadia492/winter-donation",
+
     "description": "A web application that allows people to donate winter clothing to those in need.",
-    "technologies": ["React", "Node.js", "Express"],
+    "technologies": ["React", "Node.js", "Express", "Firebase"],
     "image": "https://i.ibb.co.com/vjwg4vB/Screenshot-2025-01-04-135849.png",
     "year": 2023,
     "challenges": [

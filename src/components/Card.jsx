@@ -5,11 +5,15 @@ import { FaArrowCircleUp, FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default function Card({ project }) {
-  const { name, image, description, technologies, live } = project;
+  const { name, image, github, description, technologies, live } = project;
   return (
     <div className="card bg-base-100 shadow-xl">
       <figure>
-        <img src={image} className="object-cover h-52" alt="Shoes" />
+        <img
+          src={image}
+          className="object-cover h-52 w-full object-top"
+          alt="Shoes"
+        />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{name}</h2>
@@ -22,7 +26,7 @@ export default function Card({ project }) {
         </div>
         <p>{description}</p>
         <div className="card-actions justify-end">
-          <Link to="">
+          <Link to={github}>
             <FaGithub className="text-3xl" />
           </Link>
           <Link target="_blank" to={live}>

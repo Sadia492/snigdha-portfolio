@@ -24,7 +24,10 @@ export default function Footer() {
             <Link target="_blank" to="https://github.com/Sadia492">
               <FaGithub className="text-4xl"></FaGithub>
             </Link>
-            <Link target="_blank" to="https://www.linkedin.com/">
+            <Link
+              target="_blank"
+              to="https://www.linkedin.com/in/sadia-afrin01/"
+            >
               <FaLinkedin className="text-4xl"></FaLinkedin>
             </Link>
           </div>

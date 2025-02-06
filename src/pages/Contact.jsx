@@ -3,6 +3,8 @@ import emailjs from "emailjs-com";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaEnvelope, FaPhone, FaWhatsapp } from "react-icons/fa";
 import toast from "react-hot-toast";
+import Lottie from "lottie-react";
+import contactAnimation from "../assets/animation/Animation - 1738829706415.json";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -49,7 +51,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div id="contact" className="w-11/12 mx-auto py-12">
+    <div id="contact" className="w-11/12 mx-auto py-12 px-8">
       <h2 className="text-3xl my-8 text-center font-bold bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
         Contact Me
       </h2>
@@ -57,7 +59,7 @@ export default function ContactForm() {
       <div className="flex flex-col lg:flex-row gap-10 justify-between items-start">
         {/* Contact Form Section */}
         <form
-          className="flex-1 bg-white shadow-lg w-full rounded-lg p-8 space-y-6"
+          className="flex-1 h-full pb-[39px] bg-white shadow-lg w-full rounded-lg p-8 space-y-6"
           onSubmit={handleSubmit}
         >
           <h3 className="text-2xl font-semibold text-gray-800">Get in Touch</h3>
@@ -111,7 +113,14 @@ export default function ContactForm() {
         </form>
 
         {/* Contact Information Section */}
-        <div className="flex-1 bg-gray-100 w-full shadow-lg rounded-lg p-8 space-y-6 text-gray-800">
+        <div className="flex-1 bg-white w-full shadow-lg rounded-lg p-8 space-y-6 text-gray-800 h-full">
+          <div>
+            <Lottie
+              className="h-56 w-full"
+              animationData={contactAnimation}
+              loop={true}
+            />
+          </div>
           <h3 className="text-2xl font-semibold text-gray-800">
             Contact Information
           </h3>
@@ -125,11 +134,11 @@ export default function ContactForm() {
           </p>
           <p className="flex items-center gap-3">
             <FaPhone className="text-secondary" />
-            <span>01707604378</span>
+            <span>+8801707604378</span>
           </p>
           <p className="flex items-center gap-3">
             <FaWhatsapp className="text-secondary" />
-            <span>01707604378</span>
+            <span>+8801707604378</span>
           </p>
           <div className="bg-gradient-to-r from-secondary to-accent h-1 w-20 rounded-lg mt-4"></div>
         </div>

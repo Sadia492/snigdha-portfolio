@@ -9,13 +9,13 @@ export default function About() {
         About Me
       </h2>
       <div className="hero ">
-        <div className="hero-content flex-col lg:flex-row">
+        <div className="hero-content max-w-full flex-col lg:flex-row">
           <div className="flex-1 flex flex-col lg:flex-row justify-end gap-2">
             <div className="relative">
               {/* Image */}
               <img
                 src={photo}
-                className="max-w-sm rounded-lg shadow-2xl"
+                className="w-full rounded-lg shadow-2xl"
                 alt="Descriptive Alt Text"
               />
 

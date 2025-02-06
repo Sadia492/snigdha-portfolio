@@ -16,11 +16,11 @@ export default function MyWorks() {
   }, []);
 
   return (
-    <div id="myworks" className="pt-12">
+    <div id="myworks" className="pt-12 px-8">
       <h2 className="text-3xl my-8 mt-12 text-center font-bold bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
         My Works
       </h2>
-      <div className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {projects.map((project) => (
           <Card key={project.id} project={project}></Card>
         ))}

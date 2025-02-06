@@ -10,15 +10,15 @@ export default function Home() {
   return (
     <div id="home" className="">
       <div
-        className="hero text-white pt-12 min-h-screen bg-black/60 bg-blend-overlay"
+        className="text-white pt-12 min-h-screen bg-black/60 bg-blend-overlay"
         style={{
           backgroundImage: `url(${bg})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="hero-content flex-col-reverse  lg:flex-row">
-          <div className="flex-1">
+        <div className="flex min-h-screen w-11/12 mx-auto flex-col-reverse  lg:flex-row">
+          <div className="flex-1 flex flex-col pl-8 justify-center items-start">
             <p className="text-accent font-medium">
               <span className="text-4xl">Hey</span>, I am Sadia Afrin Snigdha
             </p>
@@ -55,12 +55,18 @@ export default function Home() {
                 <Link target="_blank" to="https://github.com/Sadia492">
                   <FaGithub className="text-4xl"></FaGithub>
                 </Link>
-                <Link target="_blank" to="https://www.linkedin.com/">
+                <Link
+                  target="_blank"
+                  to="https://www.linkedin.com/in/sadia-afrin01/"
+                >
                   <FaLinkedin className="text-4xl"></FaLinkedin>
                 </Link>
               </div>
             </div>
-            <Link target="_blank" to="https://drive.google.com/drive/u/0/home">
+            <Link
+              target="_blank"
+              to="https://drive.google.com/file/d/1B5Octi2DKgoUQ2VR7znym4HX5MFtlKEf/view?usp=drive_link"
+            >
               <button className="btn bg-gradient-to-r from-secondary to-primary text-white">
                 Download Resume
               </button>

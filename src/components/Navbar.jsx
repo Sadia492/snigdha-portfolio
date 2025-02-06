@@ -84,7 +84,7 @@ export default function Navbar() {
         </div>
         <div className="navbar-end">
           <a
-            href="https://drive.google.com/drive/u/0/home"
+            href="https://drive.google.com/file/d/1B5Octi2DKgoUQ2VR7znym4HX5MFtlKEf/view?usp=drive_link"
             target="_blank"
             className="btn bg-gradient-to-r from-secondary to-primary text-white"
           >
